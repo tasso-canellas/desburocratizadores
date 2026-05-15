@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router';
+import { createHashRouter } from 'react-router';
 import { AuthPage } from './components/AuthPage';
 import { LawyerLayout } from './components/lawyer/LawyerLayout';
 import { LawyerDashboard } from './components/lawyer/LawyerDashboard';
@@ -8,7 +8,7 @@ import { ClientLayout } from './components/client/ClientLayout';
 import { ClientDashboard } from './components/client/ClientDashboard';
 import { ClientDocumentView } from './components/client/ClientDocumentView';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     Component: AuthPage,
